@@ -181,7 +181,7 @@ const Contact = () => {
                                     </div>
                                     <div className="flex flex-col">
                                         <h2 className="text-2xl">Office Address</h2>
-                                        <p className="text-gray-400">21 itelorun close, Off Adeniyi jones, Ikeja, Lagos State</p>
+                                        <p className="text-gray-400">21 itelorun close, Off Adeniyi jones, Ikeja, Lagos</p>
                                     </div>
                                 </div>
                     
