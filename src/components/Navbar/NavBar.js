@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NavLinks from '../Navbar/NavLinks';
 import { HashLink } from 'react-router-hash-link';
 import logg from '../../images/logg.svg'
+import { Navigate } from 'react-router-dom';
 
 
 
@@ -12,6 +13,7 @@ const NavBar = () => {
         setisOpen(!isOpen);
     }
 
+   
 
     useEffect(() => {
       const scrollHandler = () => {
@@ -25,7 +27,7 @@ const NavBar = () => {
         <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && 'bg-white shadow-lg'}`}>
             <div className="flex flex-row justify-between items-center py-2">
                 <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
-                        <img className="h-40 w-40 object-contain" src={logg} alt="logo" />
+                        <img className="h-40 w-40 object-contain" src={logg} alt="logo"/>
                     <HashLink smooth to="/#hero"><h1 className="font-extrabold text-xl text-blue-900">Camanda Technology</h1></HashLink>
                 </div>
                 <div className="group flex flex-col items-center">
